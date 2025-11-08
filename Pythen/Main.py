@@ -1,0 +1,10 @@
+name = "bunny"
+age = 15
+grade = 5
+
+print("Name :", name)
+print("Data Type of Name is", type(name))
+print("Age :", age)
+print("Data Type of Age is", type(age))
+print("Grade :", grade)
+print("Data type of Grade is", type(grade))

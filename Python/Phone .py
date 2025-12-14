@@ -33,7 +33,7 @@ def initial_phonebook():
         return phone_book
         def menu():
             print("****************************************************************************************")
-            print("/t/t/SMARTPHONE DIRECTORY",flush=False)
+            print("/t/t/SMARTPHONE DIRECTORY", flush=False)
             print("****************************************************************************************")
             print("Now you can perform the following operations on this phonebook/n")
             print("1. Add a new contact")
@@ -47,20 +47,20 @@ def initial_phonebook():
 def add_contact(pd):
     dip=[]
     for i in range(len(pd[0])):
-    if i == 0:  
+        if i == 0:  
             dip.append(str(input("Eneter name*:")))
-    if i == 1: 
-			dip.append(int(input("Enter number: "))) 
-	if i == 2: 
-			dip.append(str(input("Enter e-mail address: "))) 
-	if i == 3: 
-			dip.append(str(input("Enter date of birth(dd/mm/yy): "))) 
-	if i == 4: 
-			dip.append( 
+        if i == 1: 
+            dip.append(int(input("Enter number: "))) 
+        if i == 2: 
+            dip.append(str(input("Enter e-mail address: "))) 
+        if i == 3: 
+            dip.append(str(input("Enter date of birth(dd/mm/yy): "))) 
+        if i == 4: 
+            dip.append( 
 				str(input("Enter category(Family/Friends/Work/Others): "))) 
-	pb.append(dip) 
+    pb.append(dip) 
 	 
-	return pb
+    return pb
 def remove_existing(pb): 
 	 
 	query = str( 
@@ -78,12 +78,12 @@ def remove_existing(pb):
 			print("This query has now been removed") 
 			 		
 			return pb 
-	if temp == 0: 
+if temp == 0: 
         print("Sorry you have eneterd an invalid quary. /n Pleaserecheck and try again.")
         return pd 
-        def delete_all(pb): 
+def delete_all(pb): 
 	 
-	return pb.clear() 
+    return pb.clear() 
 
 def search_existing(pb): 
 	 

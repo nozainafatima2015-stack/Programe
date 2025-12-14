@@ -58,7 +58,7 @@ while True:
     elif choice == "2":
         view_entries()
     elif choice == "3":
-        search_entry()
+        search_entry(your_name)
     elif choice == "4":
         print("Goodbye!")
         break

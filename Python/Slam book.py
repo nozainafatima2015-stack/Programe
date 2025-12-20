@@ -75,22 +75,22 @@ while True:
         print("5. Display all contacts")
         print("6. Exit phonebook")
         choice = int(input("Please enter your choice: ")) 
-        return choice
+return choice
 def add_contact(pd):
     dip=[]
     for i in range(len(pd[0])):
-    if i == 0:  
+        if i == 0:  
             dip.append(str(input("Eneter name*:")))
     if i == 1: 
-			dip.append(int(input("Enter number: "))) 
-	if i == 2: 
-			dip.append(str(input("Enter e-mail address: "))) 
-	if i == 3: 
-			dip.append(str(input("Enter date of birth(dd/mm/yy): "))) 
-	if i == 4: 
-			dip.append( 
+        dip.append(int(input("Enter number: "))) 
+    if i == 2: 
+        dip.append(str(input("Enter e-mail address: "))) 
+    if i == 3: 
+        dip.append(str(input("Enter date of birth(dd/mm/yy): "))) 
+    if i == 4: 
+        dip.append( 
 				str(input("Enter category(Family/Friends/Work/Others): "))) 
-	pb.append(dip) 
+    pb.append(dip) 
     return pb
 
     def thanks():
@@ -101,5 +101,18 @@ def add_contact(pd):
         print("****************************************************************************************")
         sys.exit("Goodbye, have a nice day!")
         print("....................................................................................................")
-        print("Hello! Welcome to the Slam book.")
-        print
+        print(" Hello dearfriends . Welcome to our slam book .")
+        print("You may now proceed to explore this slambook and fill your details about your friend.")
+        print("....................................................................................................")
+        print("You may now proceed to explore this slambook and fill your details about your friend.")
+        print("....................................................................................................")
+        ch = 1
+        pd = initial_slambook()
+        while ch in(1, 2, 3, 4, 5):
+            ch = menu()
+            if ch == 1:
+                pd = add_contact(pd)
+            elif ch == 2:
+                pd = add_contact(pd)
+            else:
+                thanks()
